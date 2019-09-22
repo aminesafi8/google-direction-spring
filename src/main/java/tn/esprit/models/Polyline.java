@@ -1,39 +1,59 @@
 package tn.esprit.models;
 
 public class Polyline {
-
-	private String poly;
-	private String distance;
+	private Double startLocationLat;
+	private Double startLocationLng;
+	private Double endLocationLat;
+	private Double endLocationLng;
 
 	public Polyline() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Polyline(String poly, String distance) {
+	public Polyline(Double startLocationLat, Double startLocationLng, Double endLocationLat, Double endLocationLng) {
 		super();
-		this.poly = poly;
-		this.distance = distance;
+		this.startLocationLat = startLocationLat;
+		this.startLocationLng = startLocationLng;
+		this.endLocationLat = endLocationLat;
+		this.endLocationLng = endLocationLng;
 	}
 
-	public String getPoly() {
-		return poly;
+	public Double getStartLocationLat() {
+		return startLocationLat;
 	}
 
-	public void setPoly(String poly) {
-		this.poly = poly;
+	public void setStartLocationLat(Double startLocationLat) {
+		this.startLocationLat = startLocationLat;
 	}
 
-	public String getDistance() {
-		return distance;
+	public Double getStartLocationLng() {
+		return startLocationLng;
 	}
 
-	public void setDistance(String distance) {
-		this.distance = distance;
+	public void setStartLocationLng(Double startLocationLng) {
+		this.startLocationLng = startLocationLng;
+	}
+
+	public Double getEndLocationLat() {
+		return endLocationLat;
+	}
+
+	public void setEndLocationLat(Double endLocationLat) {
+		this.endLocationLat = endLocationLat;
+	}
+
+	public Double getEndLocationLng() {
+		return endLocationLng;
+	}
+
+	public void setEndLocationLng(Double endLocationLng) {
+		this.endLocationLng = endLocationLng;
 	}
 
 	@Override
 	public String toString() {
-		return "Polyline [poly=" + poly + ", distance=" + distance + "]";
+		return "Polyline [startLocationLat=" + startLocationLat + ", startLocationLng=" + startLocationLng
+				+ ", endLocationLat=" + endLocationLat + ", endLocationLng=" + endLocationLng + "]";
 	}
 
 }
